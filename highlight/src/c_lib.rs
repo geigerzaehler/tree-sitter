@@ -267,7 +267,7 @@ pub unsafe extern "C" fn ts_highlighter_highlight(
 }
 
 impl TSHighlighter {
-    fn highlight(
+    pub fn highlight(
         &self,
         source_code: &[u8],
         scope_name: &str,
